@@ -8,9 +8,9 @@ from pydantic import BaseModel
 from dotenv import load_dotenv
 from redis import Redis
 from rq import Queue
-from .services import MultiPlatformScraperService, LLMService, VoiceService, JudgeService
-from .platform_router import detect_platform, route_urls
-from .profiler import ProfileAggregator, PersonaProfiler
+from services import MultiPlatformScraperService, LLMService, VoiceService, JudgeService
+from platform_router import detect_platform, route_urls
+from profiler import ProfileAggregator, PersonaProfiler
 
 load_dotenv(".env.local")
 load_dotenv()
